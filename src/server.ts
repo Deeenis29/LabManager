@@ -4,6 +4,7 @@ import { PrismaClient } from "@prisma/client";
 
 dotenv.config();
 
+// Por defecto el backend escucha en 3000. Se puede sobrescribir con la variable de entorno PORT.
 const PORT = process.env.PORT || 3000;
 const prisma = new PrismaClient();
 
